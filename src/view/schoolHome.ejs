@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Authority Dashboard</title>
+  <link rel="stylesheet" href="/css/schoolHome.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">School Authority Dashboard</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      
+      <!-- Create Student -->
+      <div class="col">
+        <div class="dashboard-section">
+          <h4 class="section-title">Create Student</h4>
+          <p>Add a new student to the system with proper credentials.</p>
+          <a href="/authority/create-student" class="btn btn-primary">Create Student</a>
+        </div>
+      </div>
+
+      <!-- Create Alumni -->
+      <div class="col">
+        <div class="dashboard-section">
+          <h4 class="section-title">Create Alumni</h4>
+          <p>Register alumni to contribute to mentorship and blog sections.</p>
+          <a href="/authority/create-alumni" class="btn btn-success">Create Alumni</a>
+        </div>
+      </div>
+
+      <!-- Raise Complaint -->
+      <div class="col">
+        <div class="dashboard-section">
+          <h4 class="section-title">Raise Complaint</h4>
+          <p>Report infrastructure or administrative concerns to officials.</p>
+          <a href="/authority/raise-complaint" class="btn btn-warning">Raise Complaint</a>
+        </div>
+      </div>
+
+      <!-- Resolve Complaint -->
+      <div class="col">
+        <div class="dashboard-section">
+          <h4 class="section-title">Resolve Complaint</h4>
+          <p>View and resolve complaints submitted by students or staff.</p>
+          <a href="/authority/resolve-complaint" class="btn btn-danger">Resolve Complaint</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <%- include('partials/footer') %>
+</body>
+</html>

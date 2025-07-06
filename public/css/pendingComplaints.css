@@ -1,0 +1,55 @@
+/* Set a subtle background */
+body {
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style the main container */
+  .container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title style */
+  h2 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  /* Form label and text spacing */
+  .form-label {
+    font-weight: 500;
+    color: #34495e;
+  }
+  
+  .form-control-plaintext {
+    background-color: #f4f6f7;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    margin-bottom: 10px;
+  }
+  
+  /* Textarea for resolution */
+  textarea.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced6e0;
+    padding: 15px;
+    resize: vertical;
+  }
+  
+  /* Submit button */
+  button.btn-success {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-success:hover {
+    background-color: #218c74;
+  }

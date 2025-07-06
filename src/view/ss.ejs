@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduAudit - Student Dashboard</title>
+  <link rel="stylesheet" href="/css/ss.css" />
+</head>
+<body>
+  <!-- Dashboard -->
+  <%- include('partials/header') %>
+  <section class="dashboard">
+    <div class="container">
+      <div class="dashboard-header">
+        <h1>Welcome back, John!</h1>
+        <p>Here's an overview of your account and recent activities.</p>
+      </div>
+
+      <div class="dashboard-cards">
+        <div class="dashboard-card">
+          <div class="icon">📝</div>
+          <h2>Raise a Complaint</h2>
+          <p>Submit issues related to teaching, facilities, or administration.</p>
+          <a href="/file-complaint" class="btn">File a Complaint</a>
+        </div>
+        <div class="dashboard-card">
+          <div class="icon">👥</div>
+          <h2>Get Guidance from Alumni</h2>
+          <p>Connect with graduates for advice and mentorship opportunities.</p>
+          <a href="/explore-mentorship" class="btn">Explore Mentorship</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%- include('partials/footer') %>
+
+  <script src="/js/ss.js"></script>
+</body>
+</html>

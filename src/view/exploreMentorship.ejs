@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alumni Guidance</title>
+  <link rel="stylesheet" href="/css/exploreMentorship.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Explore Alumni Guidance</h1>
+    
+    <form method="GET" action="/alumni-guidance" class="search-form">
+      <input type="text" name="query" placeholder="Search topics like IIT, medical, coding..." value="<%= query %>">
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="results">
+      <% if (blogs && blogs.length > 0) { %>
+        <% blogs.forEach(function(blog) { %>
+          <div class="blog-card">
+            <h3><%= blog.title %></h3>
+            <p><%= blog.description %></p>
+            <small>By Alumni ID: <%= blog.alumni_id %> | Date: <%= blog.date.toISOString().slice(0,10) %></small>
+          </div>
+        <% }); %>
+      <% } else { %>
+        <p>No guidance found for "<%= query %>"</p>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>

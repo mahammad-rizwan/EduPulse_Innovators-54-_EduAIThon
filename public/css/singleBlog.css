@@ -1,0 +1,162 @@
+/* singleBlog.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .blog-container {
+    max-width: 800px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+  }
+  
+  .blog-post {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+  }
+  
+  .blog-post h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #222;
+    font-weight: 700;
+  }
+  
+  .blog-post > p,
+  .blog-post > div {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .blog-post > div {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .blog-content p {
+    font-size: 1.1rem;
+    color: #444;
+    white-space: pre-line;
+  }
+  
+  .comments-section {
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  }
+  
+  .comments-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #222;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .comment {
+    padding: 15px 20px;
+    background: #f4f7fa;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .comment p:first-child {
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 6px;
+  }
+  
+  .comment p:last-child {
+    color: #555;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+  }
+  
+  .comment-form {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-form textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1.8px solid #ddd;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+    outline: none;
+  }
+  
+  .comment-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  }
+  
+  .comment-form button {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .blog-container {
+      margin: 20px 15px 50px;
+      padding: 0 10px;
+    }
+    
+    .blog-post, .comments-section {
+      padding: 20px;
+    }
+  
+    .blog-post h1 {
+      font-size: 2rem;
+    }
+  
+    .comments-section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  .blog-content p {
+    font-size: 1.1rem;
+    color: #444;
+    white-space: pre-line;        /* preserves line breaks */
+    word-wrap: break-word;        /* break long words */
+    overflow-wrap: break-word;    /* fallback for word-wrap */
+    max-width: 100%;              /* don't exceed container width */
+    box-sizing: border-box;       /* include padding/border in width */
+  }
+  .blog-content {
+    width: 100%;                  /* full width of parent */
+    overflow: hidden;             /* clip anything overflowing */
+    box-sizing: border-box;
+  }
+      

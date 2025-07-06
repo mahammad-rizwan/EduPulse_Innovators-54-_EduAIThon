@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.navbar {
+  background: #1a1a2e;
+  padding: 15px 0;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.logo span {
+  color: #ffdd57;
+}
+
+.nav-links {
+  list-style: none;
+  float: right;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.page-header {
+  background: #e0e0e0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.complaint-form-section {
+  padding: 40px 0;
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-control,
+.form-select,
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-hint {
+  font-size: 0.85rem;
+  color: #777;
+  display: block;
+  margin-top: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  background: #1a1a2e;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #16213e;
+}
+
+.footer {
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}  

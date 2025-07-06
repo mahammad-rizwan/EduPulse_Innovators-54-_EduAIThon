@@ -1,0 +1,11 @@
+body {
+    background-color: #f5f7fa;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }

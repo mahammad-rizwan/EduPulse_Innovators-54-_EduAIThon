@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EduAudit - Explore Mentorship</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/mm.css" />
+  <link rel="stylesheet" href="/chatbot/assets/index-DOFVov8u.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .top-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .ask-box,
+    .info-box {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .ask-box a {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #2ecc71;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .info-box {
+      background-color: #f1f8ff;
+    }
+
+    .chatbot-highlight {
+      background: linear-gradient(145deg, #e0f7ff, #ffffff);
+      border: 2px dashed #3498db;
+      transition: all 0.3s ease;
+    }
+
+    .chatbot-highlight:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(52, 152, 219, 0.2);
+      cursor: pointer;
+    }
+
+    .section-title {
+      margin: 30px 0 10px;
+      font-size: 1.5rem;
+      color: #34495e;
+    }
+
+    .post {
+      background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+      border-left: 4px solid #2ecc71;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .post:hover {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    .post-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .post-description {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .read-more {
+      text-decoration: none;
+      color: white;
+      background-color: #3498db;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .read-more:hover {
+      background-color: #2980b9;
+    }
+
+    /* New styles for dual blog sections */
+    .blog-sections {
+      display: flex;
+      gap: 2rem;
+      margin-top: 20px;
+    }
+
+    .blog-section {
+      flex: 1;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-height: 600px;
+      overflow-y: auto;
+    }
+
+    .blog-section h2 {
+      margin-top: 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      color: #2c3e50;
+    }
+
+    .alumni-section {
+      border-top: 4px solid #2ecc71;
+    }
+
+    .student-section {
+      border-top: 4px solid #3498db;
+    }
+
+    .blog-section {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden; /* ❗ Prevent horizontal scroll */
+  word-wrap: break-word; /* 💡 Break long words if needed */
+}
+
+
+.post-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  word-wrap: break-word; /* 💡 Ensures long words do not overflow */
+  overflow-wrap: break-word; /* 🛡️ For modern support */
+}
+
+
+    
+  </style>
+</head>
+<body>
+  
+
+  <div class="top-section">
+    <div class="ask-box">
+      <h2>Post a Blog</h2>
+      <p>Share your experience with students to guide and inspire them.</p>
+      <a href="/create-blog">Share Now</a>
+    </div>
+
+    <div class="info-box">
+      <h2>Support Students</h2>
+      <p>Answer student questions and support their academic or career journey.</p>
+      <p style="font-size: 0.9rem; color: #555;">Use your experience to help students grow. Check the student queries and provide answers.</p>
+      <a href="/alumni/queries" class="read-more" style="background-color: #2ecc71;">View Student Queries</a>
+
+      <!-- <a href="/alumni/queries">View Queries</a> -->
+    </div>
+  </div>
+
+  <!-- 🎓 Dual Blog Sections -->
+  <div class="blog-sections">
+    <!-- Alumni Blogs Section -->
+    <div class="blog-section alumni-section">
+      <h2>Alumni Guidance</h2>
+      <% if (alumniBlogs && alumniBlogs.length > 0) { %>
+        <% alumniBlogs.forEach(function(blog) { %>
+          <div class="post">
+            <h3 class="post-title"><%= blog.title %></h3>
+            <p class="post-description"><%= blog.description.slice(0, 150) %>...</p>
+            <a class="read-more" href="/blogs/<%= blog.id %>">Read More</a>
+          </div>
+        <% }) %>
+      <% } else { %>
+        <p>No alumni guidance available at the moment.</p>
+      <% } %>
+    </div>
+
+    <!-- Student Blogs Section -->
+    <div class="blog-section student-section">
+      <h2>Student Blogs</h2>
+      <% if (studentBlogs && studentBlogs.length > 0) { %>
+        <% studentBlogs.forEach(function(blog) { %>
+          <div class="post">
+            <h3 class="post-title"><%= blog.title %></h3>
+            <p class="post-description"><%= blog.description.slice(0, 150) %>...</p>
+            <a class="read-more" href="/student-blogs/<%= blog.id %>">Read More</a>
+          </div>
+        <% }) %>
+      <% } else { %>
+        <p>No student experiences available at the moment.</p>
+      <% } %>
+    </div>
+  </div>
+
+  
+  

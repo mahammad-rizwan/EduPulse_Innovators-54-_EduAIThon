@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EduAudit - Home</title>
+  <link rel="stylesheet" href="/css/home.css" />
+</head>
+<body>
+  <div class="home-container">
+    <!-- Header -->
+    <header class="home-header">
+      <div class="header-left">
+        <h1>EduAudit</h1>
+      </div>
+      <!-- If you want header-right links, add here -->
+      <!-- <div class="header-right">
+        <a href="/some-link">Link</a>
+      </div> -->
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h2>Welcome to EduAudit</h2>
+      <p>A platform to address school issues and connect with alumni for educational guidance.</p>
+    </section>
+
+    <!-- Role Cards -->
+    <section class="roles-section">
+      <div class="role-card">
+        <h3>Students & Parents</h3>
+        <p> report academic or behavioral concerns anonymously and effectively.</p>
+        <a href="/viewServices">View Services</a><br />
+      </div>
+
+      <div class="role-card">
+        <h3>School Authorities</h3>
+        <p>Login to submit infrastructure-related complaints and track student-reported issues.</p>
+        <a href="/authority-login">Authority Login</a>
+      </div>
+
+      <div class="role-card">
+        <h3>Higher Officials</h3>
+        <p>Analyze complaints through dashboards and manage educational quality effectively.</p>
+        <a href="/dashboard">View Dashboard</a>
+      </div>
+    </section>
+
+    <!-- Alumni Section -->
+    <section class="alumni-section">
+      <h3>Are you an Alumni?</h3>
+      <p>Share your experiences and guide students through blogs and mentorship.</p>
+      <a href="/alumni-register" class="alumni-button">Join as Alumni</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© <%= new Date().getFullYear() %> EduAudit. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

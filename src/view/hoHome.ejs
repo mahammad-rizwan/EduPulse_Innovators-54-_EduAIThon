@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Authority Dashboard</title>
+  <link rel="stylesheet" href="/css/schoolHome.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Higher Authority Dashboard</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      
+      <!-- Create Student -->
+      <div class="col">
+        <div class="dashboard-section">
+          <h4 class="section-title">Create School</h4>
+          <p>Add a new school to the system with proper credentials.</p>
+          <a href="/ho/authority/create-school" class="btn btn-primary">Create School</a>
+        </div>
+      </div>
+
+      
+
+      
+
+      <!-- Resolve Complaint -->
+      <div class="col">
+        <div class="dashboard-section">
+          <h4 class="section-title">Resolve Complaint</h4>
+          <p>View and resolve complaints submitted by students or schools.</p>
+          <a href="/ho/authority/resolve-complaint" class="btn btn-danger">Resolve Complaint</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #003366;
+  }
+  
+  .search-form {
+    display: flex;
+    margin: 2rem 0;
+  }
+  
+  .search-form input[type="text"] {
+    flex: 1;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .search-form button {
+    padding: 0.6rem 1rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .results {
+    margin-top: 1.5rem;
+  }
+  
+  .blog-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-card h3 {
+    margin-top: 0;
+    color: #0066cc;
+  }
+  
+  .blog-card p {
+    margin: 0.5rem 0;
+  }
+  

@@ -1,0 +1,75 @@
+.sp-home-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sp-header {
+    background-color: #003366;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .sp-header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .sp-header p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .sp-main-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .sp-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .sp-card h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+  }
+  
+  .sp-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sp-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .sp-button:hover {
+    background-color: #004a99;
+  }
+  
+  .sp-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #003366;
+    color: white;
+    margin-top: auto;
+  }
+  

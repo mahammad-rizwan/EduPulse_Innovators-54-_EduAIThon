@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAudit - File a Complaint</title>
+    <link rel="stylesheet" href="/css/file-complaint.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>File a Complaint</h1>
+            <p>Submit your concerns regarding academic, administrative, or infrastructure issues. All complaints are treated confidentially.</p>
+        </div>
+    </header>
+
+    <!-- Complaint Form Section -->
+    <section class="complaint-form-section">
+        <div class="container">
+            <div class="form-container">
+                <form id="complaintForm" action="/submit-complaint" method="POST">
+                    <div class="form-group">
+                        <label for="type">Complaint Type</label>
+                        <select id="type" name="type" class="form-control" required>
+                            <option value="" selected disabled>Select complaint type</option>
+                            <option value="academic">Academic (Teaching related)</option>
+                            <option value="administrative">Administrative</option>
+                            <option value="infrastructure">Infrastructure</option>
+                            <option value="behavior">Behavioral (Staff/Students)</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Brief subject of your complaint" required>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label for="subject_description">Detailed Description</label>
+                        <textarea id="subject_description" name="subject_description" class="form-control" placeholder="Please provide a detailed description of the issue..." required></textarea>
+                        <span class="form-hint">Include relevant details like dates, names (if applicable), and location.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school_id">School ID</label>
+                        <input type="number" id="school_id" name="school_id" class="form-control" placeholder="Where did the issue occur?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date_of_incident">Date of Incident</label>
+                        <input type="date" id="date_of_incident" name="date_of_incident" class="form-control">
+                    </div>
+
+                    
+
+                    <!-- <div class="form-group">
+                        <label for="supportingEvidence">Supporting Evidence (Optional)</label>
+                        <input type="file" id="supportingEvidence" name="supportingEvidence" class="file-input">
+                        <span class="form-hint">Upload images or documents (max 5MB)</span>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label for="expected_outcome">Expected Outcome</label>
+                        <textarea id="expected_outcome" name="expected_outcome" class="form-control" placeholder="What resolution are you seeking?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="status" name="status" value="pending" class="form-control" hidden>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="submitted_by" name="submitted_by" value="student" class="form-control" hidden>
+                    </div>
+
+                    <!-- <div class="form-group checkbox-group">
+                        <input type="checkbox" id="anonymous" name="anonymous">
+                        <label for="anonymous">Submit this complaint anonymously</label>
+                    </div> -->
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">I confirm that all information provided is accurate to the best of my knowledge</label>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Complaint</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <%- include('partials/footer') %>
+
+   
+</body>
+</html>  

@@ -1,0 +1,16 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .dashboard-section {
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .section-title {
+    margin-bottom: 15px;
+  }
